@@ -20,6 +20,6 @@ The test suite includes synthetic DOCX fixtures, per-rule review, project scopin
 
 The first model attempt timed out; it is not treated as a zero-token success. The final benchmark reports 59,634 versus 52,828 input tokens in one repeat, with different caching and one pair increasing after routing. It does not establish general savings, coding success or costs. See [method](BENCHMARK.md), [synthetic live evidence](benchmark-live.json) and [audit summary](development-audit.json).
 
-A GitHub CI matrix is configured for Linux/macOS/Windows and Python 3.11/3.12/3.14. Remote execution results must be checked before public release; configuration alone is not cross-platform validation.
+GitHub CI completed successfully before publication: [run 41433886408](https://github.com/qikaiyin169-svg/ai-context-os/actions/runs/41433886408) validated code commit `4cc3525e733e31d06777a125b8d67ff181eae440`. All 10 jobs passed: nine combinations of Linux/macOS/Windows and Python 3.11/3.12/3.14, plus lint/coverage/build/dependency audit. Windows appropriately skips the two POSIX-specific permission/symlink checks. Subsequent release-record edits change documentation only. Publication history uses GitHub noreply author/committer addresses.
 
 Known design limits: explicit-only conflict detection, keyword skill routing, byte rather than token budgets, inherited Codex context, no write-enabled Enhanced Mode, version-dependent transport hints, no automatic obsolete-skill removal and no crash-atomic multi-file installation. See the architecture, usage and security documents.
