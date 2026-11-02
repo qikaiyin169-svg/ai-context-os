@@ -1,0 +1,7 @@
+{
+  "date": "2026-11-02",
+  "tool": "pip-audit 2.10.1",
+  "packages_audited": 36,
+  "known_vulnerabilities": 0,
+  "scope": "Isolated development environment; zero third-party runtime requirements."
+}

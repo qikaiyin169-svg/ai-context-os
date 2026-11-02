@@ -1,0 +1,187 @@
+{
+  "limitations": [
+    "Three simple exact-JSON tasks do not establish coding success or general token savings.",
+    "Codex native rules, skills, provider config and prompt caching may affect both arms.",
+    "Byte counts are not tokens. Missing usage is null. No price/cost is inferred.",
+    "Order alternates by repeat; use multiple repeats and a pinned model for comparisons."
+  ],
+  "live": true,
+  "method": "Full approved AICO context versus keyword-routed AICO context; paired synthetic tasks.",
+  "records": [
+    {
+      "repeat": 0,
+      "task": "What is the python test command?",
+      "mode": "full",
+      "prompt_sha256": "26132ca581dd6fafb638862eeb41d0dd53f4593fe67b339bd7d1e19503716344",
+      "context_bytes": 6503,
+      "passed": true,
+      "usage": {
+        "cached_input_tokens": 13184,
+        "input_tokens": 17738,
+        "output_tokens": 41
+      },
+      "ok": true,
+      "response": "{\"command\": \"pytest -q\"}",
+      "elapsed_seconds": 130.116,
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "warnings": [
+        "Reconnecting... 2/5 (request timed out)",
+        "Reconnecting... 3/5 (request timed out)",
+        "Reconnecting... 4/5 (request timed out)",
+        "Reconnecting... 5/5 (request timed out)"
+      ]
+    },
+    {
+      "repeat": 0,
+      "task": "What is the python test command?",
+      "mode": "routed",
+      "prompt_sha256": "c8373aa86d627baeb6a777588deb6fdcdd2dac8844008eef28682e4b0962f603",
+      "context_bytes": 199,
+      "passed": true,
+      "usage": {
+        "cached_input_tokens": 13184,
+        "input_tokens": 19750,
+        "output_tokens": 44
+      },
+      "ok": true,
+      "response": "{\"command\": \"pytest -q\"}",
+      "elapsed_seconds": 130.102,
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "warnings": [
+        "Reconnecting... 2/5 (request timed out)",
+        "Reconnecting... 3/5 (request timed out)",
+        "Reconnecting... 4/5 (request timed out)",
+        "Reconnecting... 5/5 (request timed out)"
+      ]
+    },
+    {
+      "repeat": 0,
+      "task": "What is the javascript test command?",
+      "mode": "full",
+      "prompt_sha256": "a0650d68f8affebd1ea207ee1705f495489715c4f39e5199c0232f5211da013e",
+      "context_bytes": 6503,
+      "passed": true,
+      "usage": {
+        "cached_input_tokens": 13184,
+        "input_tokens": 20948,
+        "output_tokens": 41
+      },
+      "ok": true,
+      "response": "{\"command\": \"npm test\"}",
+      "elapsed_seconds": 122.643,
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "warnings": [
+        "Reconnecting... 2/5 (request timed out)",
+        "Reconnecting... 3/5 (request timed out)",
+        "Reconnecting... 4/5 (request timed out)",
+        "Reconnecting... 5/5 (request timed out)"
+      ]
+    },
+    {
+      "repeat": 0,
+      "task": "What is the javascript test command?",
+      "mode": "routed",
+      "prompt_sha256": "f00e29a0829d762d39e7cc2da5da2493c5f4d1f94ffa420e3d903d88c271d982",
+      "context_bytes": 210,
+      "passed": true,
+      "usage": {
+        "cached_input_tokens": 0,
+        "input_tokens": 16539,
+        "output_tokens": 37
+      },
+      "ok": true,
+      "response": "{\"command\": \"npm test\"}",
+      "elapsed_seconds": 126.955,
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "warnings": [
+        "Reconnecting... 2/5 (request timed out)",
+        "Reconnecting... 3/5 (request timed out)",
+        "Reconnecting... 4/5 (request timed out)",
+        "Reconnecting... 5/5 (request timed out)"
+      ]
+    },
+    {
+      "repeat": 0,
+      "task": "What is the rust test command?",
+      "mode": "full",
+      "prompt_sha256": "a7123973e27f5106477a7d59140a3df94efc76c512890de43d63f83948216caa",
+      "context_bytes": 6503,
+      "passed": true,
+      "usage": {
+        "cached_input_tokens": 13184,
+        "input_tokens": 20948,
+        "output_tokens": 35
+      },
+      "ok": true,
+      "response": "{\"command\": \"cargo test\"}",
+      "elapsed_seconds": 137.685,
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "warnings": [
+        "Reconnecting... 2/5 (request timed out)",
+        "Reconnecting... 3/5 (request timed out)",
+        "Reconnecting... 4/5 (request timed out)",
+        "Reconnecting... 5/5 (request timed out)"
+      ]
+    },
+    {
+      "repeat": 0,
+      "task": "What is the rust test command?",
+      "mode": "routed",
+      "prompt_sha256": "214aca491f1c2a5289d187a2563f2051e07dcc823493c2cff60bcf7d6ff95c1b",
+      "context_bytes": 194,
+      "passed": true,
+      "usage": {
+        "cached_input_tokens": 13184,
+        "input_tokens": 16539,
+        "output_tokens": 38
+      },
+      "ok": true,
+      "response": "{\"command\": \"cargo test\"}",
+      "elapsed_seconds": 120.655,
+      "provider": "codex-cli",
+      "requested_model": "gpt-6.1-sol",
+      "warnings": [
+        "Reconnecting... 2/5 (request timed out)",
+        "Reconnecting... 3/5 (request timed out)",
+        "Reconnecting... 4/5 (request timed out)",
+        "Reconnecting... 5/5 (request timed out)"
+      ]
+    }
+  ],
+  "schema": 1,
+  "suite": "synthetic-instruction-adherence-v1",
+  "summary": {
+    "full": {
+      "cached_input_tokens": 39552,
+      "input_tokens": 59634,
+      "measured_runs": 3,
+      "output_tokens": 117,
+      "passed": 3,
+      "runs": 3
+    },
+    "routed": {
+      "cached_input_tokens": 26368,
+      "input_tokens": 52828,
+      "measured_runs": 3,
+      "output_tokens": 119,
+      "passed": 3,
+      "runs": 3
+    }
+  },
+  "environment": {
+    "date": "2026-11-02",
+    "timezone": "Asia/Shanghai",
+    "platform": "macOS arm64",
+    "python": "3.12.14",
+    "codex_cli": "0.166.0-alpha.5.1",
+    "requested_model": "gpt-6.1-sol",
+    "repeats": 1,
+    "timeout_seconds": 360,
+    "transport_hint": "HTTP requested; recovered reconnect warnings still observed"
+  }
+}

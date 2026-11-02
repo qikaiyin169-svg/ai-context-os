@@ -1,0 +1,2 @@
+RULE: Preserve existing user configuration during installation.
+规则: 没有实际运行的测试，不得声称已经通过。

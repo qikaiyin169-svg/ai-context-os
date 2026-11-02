@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=84.1,<85"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-context-os"
+version = "0.1.0"
+description = "Local-first, reviewable context management for Codex"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "AI Context OS contributors"}]
+keywords = ["codex", "agents", "context", "local-first"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+aico = "aico.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

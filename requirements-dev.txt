@@ -1,0 +1,10 @@
+-c constraints-dev.txt
+pip==26.2.2
+# Development tools only; Python 3.11+. No aico runtime dependencies.
+build==1.6.1
+setuptools==84.2.1
+wheel==0.48.0
+packaging==26.3
+ruff==0.17.3
+coverage==7.17.0
+pip-audit==2.10.1
